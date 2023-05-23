@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="CSS/style.css"> -->
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="CSS/phone.css">
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Kanit&family=Kaushan+Script&family=Montserrat:wght@500&family=Roboto+Mono:wght@300&family=Secular+One&display=swap"
+    rel="stylesheet">
+<style>
+     * {
+        margin: 0px;
+        padding: 0px;
+        /* background-color: #fc9f09; */
+        /* z-index: -100; */
+    }
+    body{
+        background-color: #fee3a7;
+    }
+
+    .nav {
+        /* background-color: rgb(255, 255, 255); */
+
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0px;
+        z-index: 1000;
+
+    }
+
+    .nav::before {
+        content: "";
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        /* opacity: 0.7; */
+    }
+
+    .nav img {
+        margin: 10px 15px;
+        padding: 5px;
+        height: 55px;
+        width: 200px;
+
+    }
+
+    .nav ul {
+
+        display: flex;
+    }
+
+    .nav ul li {
+
+        list-style: none;
+        margin: 0px;
+    }
+
+    .nav ul li a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        padding: 20px;
+        font-family: 'Kanit', sans-serif;
+        color: rgb(0, 0, 83);
+        /* display: block; */
+    }
+
+    .nav ul li a:hover {
+        background-color: aquamarine;
+    }
+
+    #home {
+        display: flex;
+        flex-direction: column;
+        /* padding:3px 200px; */
+        height: 550px;
+        justify-content: center;
+        align-items: center;
+
+        /* background: url('img/main1.jpg') no-repeat center center/cover; */
+        /* height: 75%; */
+        /* width: 100%; */
+        /* opacity: 0.8; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* text-align: center; */
+        /* align-items: center; */
+        /* justify-content: center; */
+    }
+
+    #home::before {
+        content: "";
+        position: absolute;
+        background: url('img/main1.jpg') no-repeat center center/cover;
+        height: 80%;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        z-index: -1;
+        /* opacity: 0.89; */
+    }
+
+    #home .h1 {
+        margin-top: 220px;
+        text-align: center;
+        font-family: 'Kanit', sans-serif;
+        color: rgb(255, 255, 255);
+        font-size: 4rem;
+        z-index: -1;
+    }
+
+    #home .h3 {
+
+        font-family: 'Kanit', sans-serif;
+        color: rgb(255, 255, 255);
+        font-size: 2rem;
+        z-index: -1;
+
+    }
+
+    #home .btn {
+        margin: 20px;
+        width: auto;
+        align-items: center;
+        font-size: 1.5rem;
+        color: white;
+        background-color: #fc9f09;
+        border-radius: 5px;
+        padding: 7px 12px;
+        border: 0px;
+        cursor: pointer;
+    }
+
+    #home2 {
+        position: relative;
+        top: -85px;
+        margin: 2.5%;
+        /* z-index: 1; */
+        /* color: rgb(0, 0, 0); */
+        /* background-color: white; */
+        /* height: 100PX; */
+        width: 95%;
+    }
+    #home2::before {
+        content: "";
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        /* opacity: 0.7; */
+    }
+
+    #home2 h2 {
+        margin: 50px;
+        /* padding: 50px; */
+        padding-top: 20px;
+        font-size: 2.5rem;
+        font-family: 'Kanit', sans-serif;
+    }
+
+    #home2 h3 {
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 0px;
+        padding: 0px;
+        font-size: 1.5rem;
+        font-family: 'Kanit', sans-serif;
+    }
+
+    #home2 hr {
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 0px;
+
+    }
+
+    #home2 .regions {
+        display: flex;
+        margin: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #home2 img {
+        /* margin-left: 50px;
+        margin-right: 50px; */
+        padding: 20px;
+        height: 200px;
+        display: block;
+    }
+
+    #home2 ul {
+        margin-left: 70px;
+        margin-right: 50px;
+        padding: 0px;
+        padding: 0px;
+        font-size: 1.5rem;
+        font-family: 'Kanit', sans-serif;
+        text-align: center;
+    }
+
+    #home2 a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #home2 a:hover {
+
+        color: orange;
+    }
+    #home2 .c{
+        display: flex;
+        margin: 50px;
+        padding: 50px;
+        /* justify-content: center; */
+        top: 612px;
+        height: 100%;
+        /* border: 2px solid rebeccapurple; */
+        background-color: #252731;
+        color: white;
+    }
+
+    #home2 .c h1{
+        font-size: 1.5rem;
+        margin: 20px;
+        /* display: flex; */
+        font-family: 'Kanit', sans-serif;
+    }
+    #home2 .c h3{
+        /* display: flex; */
+        font-size: 1.2rem;
+        margin: 20px;
+        font-family: 'Kanit', sans-serif;
+    }
+    #home2 form {
+        margin: 20px;
+        /* display: flex; */
+        font-family: 'Kanit', sans-serif;
+        width: 200px;
+    }
+    #home2 form input{
+        height: 50px;
+        width: 200px;
+        font-family: 'Kanit', sans-serif;
+        font-size: 1rem;
+        padding: 7px;
+    }
+    #home2 .btn {
+        margin: 20px;
+        font-size: 1rem;
+        padding: 7px;
+        width: 200px;
+        height: 70px;
+        padding: 7px;
+        font-family: 'Kanit', sans-serif;
+        border-radius: 10px;
+        border: none;
+        background-color: #fc9f09;
+    }
+    footer{
+        text-align: center;
+        justify-content: center;
+        
+        color: white;
+        /* background-color: black; */
+        height: auto;
+        padding: 10px 20px;
+        font-family: 'Kanit', sans-serif;
+    }
+    footer::before{
+        background-color: #004165;
+        content: "";
+        position: absolute;
+        height: 40%;
+        left: 0px;
+        width: 100%;
+        z-index: -1;
+    }
+    footer .f{
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+    }
+    footer .f ul {
+        /* flex-direction: column; */
+        margin: 50px;
+    }
+    footer .f ul li {
+        /* flex-direction: column; */
+        list-style: none;
+        font-size: 1rem;
+    }
+    footer .f ul li a{
+        /* flex-direction: column; */
+        font-family: 'Kanit', sans-serif;
+        text-decoration: none;
+        color: white;
+    }
+    footer ul h3{
+        
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+     
+</style>
+
+<body>
+    <nav class="nav">
+        <div class="logo">
+            <img src="p1.jpg" alt="">
+
+        </div>
+        <ul class="mb">
+            <li class=><a href="#">Be inspired</a></li>
+            <li class=><a href="#">Places to go</a></li>
+            <li class=><a href="#">Things to do</a></li>
+            <li class=><a href="#">Plan your trip</a></li>
+        </ul>
+    </nav>
+
+
+    <section id="home">
+        <h1 class="h1">PLAN YOUR TRIP TO EUROPE</h1>
+        <h3 class="h3">Let's Start planning your ultimate holiday</h3>
+        <button class="btn">Start now!</button>
+    </section>
+
+
+
+    <section id="home2">
+        <h2>DESTINATIONS</h2>
+        <h3>By region</h3>
+        <hr>
+        <div class="regions">
+            <div class="box">
+                <img src="img/balkan.jpg" alt="">
+                <ul><a href="#">Balkans</a></ul>
+            </div>
+            <div class="box">
+                <img src="img/central_europe.jpg" alt="">
+                <ul><a href="#">Central europe</a></ul>
+            </div>
+            <div class="box">
+                <img src="img/nordic.jpg" alt="">
+                <ul><a href="#">Nordic</a></ul>
+            </div>
+        </div>
+        <div class="c">
+            <div class="tittle">
+                <h1 class="tittle">Want to Know more about Europe?</h1>
+                <h3>Sign up to our newsletter here:</h3>
+            </div>
+            <form action="">
+                <input type="text" id="name" placeholder="Your name">
+            </form>
+            <form action="">
+                <input type="text" id="email" placeholder="Email address*">
+            </form>
+            <button class="btn">REGISTER</button>
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <div class="f">
+            
+            <ul class="f1"><h3>About this site</h3>
+                <li><a href="#">PRIVACY POLICY</a></li>
+                <li><a href="#">TERMS AND CONDITIONS</a></li>
+                <li><a href="#">SITE MAP</a></li>
+            </ul>
+            
+            <ul class="f1"><h3>Other sites</h3>
+                <li><a href="#">MEDIA AND INDUSTRY</a></li>
+                <li><a href="#">BUSSINESS EVENTS</a></li>
+                <li><a href="#">TOURISM INVESTMENTS</a></li>
+            </ul>
+
+            <div class="media">
+
+            </div>
+
+        </div>
+        <div class="center">
+            Copyright &copy; www.visiteurope.com. All rights reserved!
+        </div>
+    </footer>
+    
+</body>
+
+</html>
