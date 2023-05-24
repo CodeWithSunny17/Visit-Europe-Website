@@ -9,29 +9,29 @@
     font-size: 0.8rem;
     padding: 10px;
 }
-#home{
+.home{
     height: 300px;
 }
-#home:before{
+.home:before{
     height: 60%;
 }
-#home .h1{
+.home h1{
     margin-top: 120px;
     font-size: 1.8rem;
 }
-#home .h3{
+.home h3{
     font-size: 1rem;
 }
-#home .btn{
+.home .btn{
     font-size: 0.8rem;
 }
-#home2 .regions {
+.home2 .regions {
     flex-wrap: wrap;
 }
-#home2 .c{
+.home2 .c{
     flex-direction: column;
 }
-#home2 .c form,#home2 .c button{
+.home2 .c form,#home2 .c button{
     width: 100px;
 }
 footer{

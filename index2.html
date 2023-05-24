@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- <link rel="stylesheet" href="CSS/style.css"> -->
-    <link rel="stylesheet" media="only screen and (min-width: 750px) and (max-width: 1170px)" href="CSS/tablet.css">
-    <link rel="stylesheet" media="only screen and (min-width: 375px) and (max-width:750px)" href="CSS/phone.css">
+    <!-- <link rel="stylesheet" media="screen and (min-device-width: 768px) and (max-device-width: 1024px)" href="CSS/tablet.css"> -->
+    <!-- <link rel="stylesheet" media="screen and (max-device-width: 768px)" href="CSS/phone.css"> -->
 </head>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,13 +16,15 @@
     href="https://fonts.googleapis.com/css2?family=Kanit&family=Kaushan+Script&family=Montserrat:wght@500&family=Roboto+Mono:wght@300&family=Secular+One&display=swap"
     rel="stylesheet">
 <style>
-     * {
+    * {
         margin: 0px;
         padding: 0px;
+        box-sizing: border-box;
         /* background-color: #fc9f09; */
         /* z-index: -100; */
     }
-    body{
+
+    body {
         background-color: #fcf0d5;
     }
 
@@ -52,7 +54,7 @@
     .nav img {
         margin: 10px 15px;
         padding: 5px;
-        height: 55px;
+        height: auto;
         width: 200px;
 
     }
@@ -81,7 +83,7 @@
         background-color: aquamarine;
     }
 
-    #home {
+    .home {
         display: flex;
         flex-direction: column;
         /* padding:3px 200px; */
@@ -100,7 +102,7 @@
         /* justify-content: center; */
     }
 
-    #home::before {
+    .home::before {
         content: "";
         position: absolute;
         background: url('img/main1.jpg') no-repeat center center/cover;
@@ -112,7 +114,7 @@
         /* opacity: 0.89; */
     }
 
-    #home .h1 {
+    .home h1 {
         margin-top: 220px;
         text-align: center;
         font-family: 'Kanit', sans-serif;
@@ -121,7 +123,7 @@
         z-index: -1;
     }
 
-    #home .h3 {
+    .home h3 {
 
         font-family: 'Kanit', sans-serif;
         color: rgb(255, 255, 255);
@@ -130,7 +132,7 @@
 
     }
 
-    #home .btn {
+    .home .btn {
         margin: 20px;
         width: auto;
         align-items: center;
@@ -143,7 +145,7 @@
         cursor: pointer;
     }
 
-    #home2 {
+    .home2 {
         position: relative;
         top: -85px;
         margin: 2.5%;
@@ -153,7 +155,8 @@
         /* height: 100PX; */
         width: 95%;
     }
-    #home2::before {
+
+    .home2::before {
         content: "";
         background-color: rgb(255, 255, 255);
         position: absolute;
@@ -165,7 +168,7 @@
         /* opacity: 0.7; */
     }
 
-    #home2 h2 {
+    .home2 h2 {
         margin: 50px;
         /* padding: 50px; */
         padding-top: 20px;
@@ -173,7 +176,7 @@
         font-family: 'Kanit', sans-serif;
     }
 
-    #home2 h3 {
+    .home2 h3 {
         margin-left: 50px;
         margin-right: 50px;
         padding: 0px;
@@ -182,21 +185,21 @@
         font-family: 'Kanit', sans-serif;
     }
 
-    #home2 hr {
+    .home2 hr {
         margin-left: 50px;
         margin-right: 50px;
         padding: 0px;
 
     }
 
-    #home2 .regions {
+    .home2 .regions {
         display: flex;
         margin: 50px;
         align-items: center;
         justify-content: center;
     }
 
-    #home2 img {
+    .home2 img {
         /* margin-left: 50px;
         margin-right: 50px; */
         padding: 20px;
@@ -204,7 +207,7 @@
         display: block;
     }
 
-    #home2 ul {
+    .home2 ul {
         margin-left: 70px;
         margin-right: 50px;
         padding: 0px;
@@ -214,16 +217,17 @@
         text-align: center;
     }
 
-    #home2 a {
+    .home2 a {
         text-decoration: none;
         color: black;
     }
 
-    #home2 a:hover {
+    .home2 a:hover {
 
         color: orange;
     }
-    #home2 .c{
+
+    .home2 .c {
         display: flex;
         /* margin: 50px; */
         padding: 50px;
@@ -235,32 +239,36 @@
         color: white;
     }
 
-    #home2 .c h1{
+    .home2 .c h1 {
         font-size: 1.5rem;
         margin: 20px;
         /* display: flex; */
         font-family: 'Kanit', sans-serif;
     }
-    #home2 .c h3{
+
+    .home2 .c h3 {
         /* display: flex; */
         font-size: 1.2rem;
         margin: 20px;
         font-family: 'Kanit', sans-serif;
     }
-    #home2 form {
+
+    .home2 form {
         margin: 20px;
         /* display: flex; */
         font-family: 'Kanit', sans-serif;
         width: 200px;
     }
-    #home2 form input{
+
+    .home2 form input {
         height: 50px;
         width: 200px;
         font-family: 'Kanit', sans-serif;
         font-size: 1rem;
         padding: 7px;
     }
-    #home2 .btn {
+
+    .home2 .btn {
         margin: 20px;
         font-size: 1rem;
         padding: 7px;
@@ -272,17 +280,19 @@
         border: none;
         background-color: #fc9f09;
     }
-    footer{
+
+    footer {
         text-align: center;
         justify-content: center;
-        
+
         color: white;
         /* background-color: black; */
         height: auto;
         padding: 10px 20px;
         font-family: 'Kanit', sans-serif;
     }
-    footer::before{
+
+    footer::before {
         background-color: #004165;
         content: "";
         position: absolute;
@@ -291,33 +301,181 @@
         width: 100%;
         z-index: -1;
     }
-    footer .f{
+
+    footer .f {
         text-align: left;
         display: flex;
         flex-direction: row;
     }
+
     footer .f ul {
         /* flex-direction: column; */
         margin: 50px;
     }
+
     footer .f ul li {
         /* flex-direction: column; */
         list-style: none;
         font-size: 1rem;
     }
-    footer .f ul li a{
+
+    footer .f ul li a {
         /* flex-direction: column; */
         font-family: 'Kanit', sans-serif;
         text-decoration: none;
         color: white;
     }
-    footer ul h3{
-        
+
+    footer ul h3 {
+
         padding-top: 10px;
         padding-bottom: 10px;
         font-size: 1rem;
     }
-     
+
+    @media only screen and (max-width: 768px) {
+        .nav {
+            flex-direction: column;
+        }
+
+        .nav img {
+
+            width: 180px;
+
+        }
+
+        /* .nav img{
+    height: 40px;
+    width: 170px;
+} */
+
+        .nav ul li {
+            font-size: 0.8rem;
+            padding-bottom: 10px;
+        }
+
+        .nav ul li a {
+            font-size: 0.8rem;
+            padding: 10px;
+        }
+
+        .home {
+            height: 300px;
+        }
+
+        .home:before {
+            height: 60%;
+        }
+
+        .home h1 {
+            margin-top: 120px;
+            font-size: 1.8rem;
+        }
+
+        .home h3 {
+            font-size: 1rem;
+        }
+
+        .home .btn {
+            font-size: 0.8rem;
+        }
+
+        .home2 .regions {
+            flex-wrap: wrap;
+        }
+
+        .home2 .c {
+            flex-direction: column;
+        }
+
+        .home2 .c form,
+        #home2 .c button {
+            width: 100px;
+        }
+
+        footer {
+            flex-direction: column;
+        }
+
+        footer .f ul {
+            /* flex-direction: column; */
+            margin: 20px;
+        }
+
+        footer .f ul li {
+            /* flex-direction: column; */
+            list-style: none;
+            font-size: 0.8rem;
+        }
+
+    }
+
+    @media only screen and (min-width:768px) and (max-width: 1024px) {
+        .nav {
+            flex-direction: column;
+        }
+
+        .nav img {
+
+            width: 250px;
+
+        }
+
+        .nav ul li {
+            font-size: 0.8rem;
+            padding-bottom: 10px;
+        }
+
+        .nav ul li a {
+            font-size: 1.2rem;
+            padding: 20px;
+        }
+
+        .home {
+            height: 450px;
+        }
+
+        .home:before {
+            height: 60%;
+        }
+
+        .home h1 {
+            margin-top: 155px;
+            font-size: 3rem;
+        }
+
+        .home h3 {
+            font-size: 1.5rem;
+        }
+
+        .home .btn {
+            font-size: 1rem;
+        }
+
+        .home2 .regions {
+            flex-wrap: wrap;
+        }
+
+        .home2 .c {
+            flex-direction: column;
+        }
+
+        .home2 .c form,
+        #home2 .c button {
+            width: 150px;
+        }
+
+        footer .f ul {
+            /* flex-direction: column; */
+            margin: 40px;
+        }
+
+        footer .f ul li {
+            /* flex-direction: column; */
+            list-style: none;
+            font-size: 0.9rem;
+        }
+    }
 </style>
 
 <body>
@@ -335,7 +493,7 @@
     </nav>
 
 
-    <section id="home">
+    <section class="home">
         <h1 class="h1">PLAN YOUR TRIP TO EUROPE</h1>
         <h3 class="h3">Let's Start planning your ultimate holiday</h3>
         <button class="btn">Start now!</button>
@@ -343,7 +501,7 @@
 
 
 
-    <section id="home2">
+    <section class="home2">
         <h2>DESTINATIONS</h2>
         <h3>By region</h3>
         <hr>
@@ -381,14 +539,16 @@
     <footer>
 
         <div class="f">
-            
-            <ul class="f1"><h3>About this site</h3>
+
+            <ul class="f1">
+                <h3>About this site</h3>
                 <li><a href="#">PRIVACY POLICY</a></li>
                 <li><a href="#">TERMS AND CONDITIONS</a></li>
                 <li><a href="#">SITE MAP</a></li>
             </ul>
-            
-            <ul class="f1"><h3>Other sites</h3>
+
+            <ul class="f1">
+                <h3>Other sites</h3>
                 <li><a href="#">MEDIA AND INDUSTRY</a></li>
                 <li><a href="#">BUSSINESS EVENTS</a></li>
                 <li><a href="#">TOURISM INVESTMENTS</a></li>
@@ -403,7 +563,7 @@
             Copyright &copy; www.visiteurope.com. All rights reserved!
         </div>
     </footer>
-    
+
 </body>
 
 </html>
